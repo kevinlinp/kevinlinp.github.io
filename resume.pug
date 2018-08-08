@@ -1,0 +1,192 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(content='IE=edge', http-equiv='X-UA-Compatible')
+    meta(content='width=device-width, initial-scale=1', name='viewport')
+    meta(content="Kevin Lin's personal website.", name='description')
+    meta(content='Kevin Lin', name='author')
+    title Kevin Lin
+    link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO", crossorigin="anonymous")
+    link(rel="stylesheet" href="https://fontlibrary.org/face/cmu-bright" type="text/css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css")
+
+    style
+      :scss
+        .resume {
+          font-family: "CMU Bright", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        .container {
+          margin-top: 4rem;
+          margin-bottom: 8rem;
+        }
+
+        header {
+          margin-bottom: 3rem;
+        }
+
+        section {
+          margin-bottom: 2.25rem;
+
+          &.minor-section {
+            margin-bottom: 1.65rem;
+          }
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        h2 {
+          font-size: 1.45rem;
+          margin-bottom: .7rem;
+        }
+
+        h3 {
+          font-size: 1.25rem;
+          margin-top: 1.3rem;
+        }
+
+        a {
+          color: #000 !important;
+        }
+
+        ul.loose-list li {
+          margin-bottom: .6rem;
+        }
+
+        .github-fork-ribbon {
+          opacity: 0.3;
+          &:before {
+            background-color: #CCC !important;
+          }
+        }
+
+        .github-fork-ribbon:hover {
+          opacity: 1;
+
+          &:before {
+            background-color: #FF7F00 !important;
+          }
+        }
+
+        @media print {
+          html {
+            font-size: 12px;
+          }
+
+          .container {
+            margin-top: 2rem;
+            margin-bottom: 0;
+          }
+        }
+
+  body
+    .container
+      .d-none.d-print-block.position-absolute(style="right: 0")
+        small.text-muted
+          | printed from
+          |
+          a(href="https://kevinlinp.org/resume") kevinlinp.org/resume
+
+      .resume
+        .text-center
+          h1 Kevin Lin
+          a(href="mailto:kevin.lin.p@gmail.com") kevin.lin.p@gmail.com
+          .resume
+
+        section
+          h2 Summary
+          p 5-year Ruby on Rails full-stack software developer currently not seeking new opportunities.
+
+        section
+          h2 Skills
+          ul.list-unstyled.loose-list
+            li Languages: Ruby, HTML, Haml, CSS, Sass, JavaScript (ES6)
+            li Frameworks: Ruby on Rails, MiniTest, Rspec, Capybara, jQuery, Bootstrap
+            li Tools: Linux, PostgreSQL, Sidekiq, Redis, Memcache, Elasticsearch, Git, Heroku, New Relic, CircleCI, Rollbar, Amazon EC2, Amazon Cloudfront, Twilio, Google Analytics, Optimizely
+            li Methodologies: Test-driven development, Agile
+
+        section
+          h2 Experience
+          section.minor-section
+            h3
+              a(href='https://www.hospitalityonline.com') Hospitality Online
+              |
+              |
+              small Seattle, WA
+            p Software Developer, February 2018 – Present
+
+            h3
+              a(href='http://tanookilabs.com/') Tanooki Labs
+              |
+              |
+              small Remote
+            p Software Developer, September 2016 – July 2017
+            ul
+              li Developer on a consumer-facing Ruby on Rails project.
+              li Independently implemented full features with direction from product managers and designers.
+              li Responsibilities included: data model design, Elasticsearch integration, performance optimization, heavy client-side processing, responsive designs, continuous integration, refactoring, and Heroku deployment.
+
+            h3
+              a(href='http://treatme.com') Clinkle
+              |
+              |
+              small Remote
+            p Software Developer, Independent Contractor, July 2015 – June 2016
+            ul
+              li Lead developer on the Ruby on Rails Treats API server.
+              li Took ownership of the entire codebase and attached operational concerns.
+              li Began feature testing in code, increasing code coverage from 0% to over 85%.
+              li Independently implemented full features with direction from product managers and designers.
+              li Responsibilities included: Heroku hosting, exception logging, NewRelic monitoring, uptime improvement, performance optimization, SQL query inspection, event logging, refactoring, implementing and negotiating web designs with designers, responsive designs, task and project management, coordination with remote workers, feature testing, and continuous integration.
+
+          section.minor-section
+            h3
+              a(href='http://en.wikipedia.org/wiki/Avvo') Avvo
+              |
+              |
+              small Seattle, WA
+            p Software Developer, March 2012 – April 2015
+            ul
+              li Worked on every layer of a complex 8-year-old Rails project comprised of multiple databases, Rails installations, and in-house libraries.
+              li Implemented a revamp of the high-traffic legal guide pages through working with designers and product managers.
+              li Was part of a small greenfield team that built Avvo's lead tracking solution: Ignite.
+              li Shipped dozens of features and fixed hundreds of bugs throughout all of Avvo's codebase.
+              li Optimized server response performance by implementing page fragment caching, optimizing SQL queries, and revising data models.
+              li Helped divide a monolithic application into several smaller, focused concerns through the use of RESTful microservices.
+              li Touched a large variety of topics including analytics, server monitoring, cross-browser issues, browser-automation testing, HTML Microdata, and Rails framework updates.
+
+          section.minor-section
+            h3
+              a(href='http://en.wikipedia.org/wiki/Rackspace') Rackspace
+              |
+              |
+              small Blacksburg, VA
+            p Software Developer Intern, Part-Time, January 2009 – May 2010
+
+            ul
+              li Completed the MS Exchange functions of the Email and Apps REST API and helped the product launch.
+
+        section
+          h2 Education
+          section
+            h3
+              a(href='http://en.wikipedia.org/wiki/Virginia_Tech') Virginia Tech
+              |
+              |
+              small Blacksburg, VA
+            | B.S Computer Science with Business Minor
+            p Selected coursework: Technical Writing, Intro to DBMS, Design of Information, Software Engineering
+
+          section
+            h3
+              a(href='http://en.wikipedia.org/wiki/Thomas_Jefferson_High_School_for_Science_and_Technology') Thomas Jefferson High School for Science and Technology
+              |
+              |
+              small Alexandria, VA
+
+
+    .d-print-none
+      a(class="github-fork-ribbon right-bottom fixed" href="https://github.com/kevinlinp/personal-website-eleventy" data-ribbon="View me on GitHub" title="View me on GitHub" target="_blank") View me on GitHub
