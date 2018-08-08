@@ -1,0 +1,50 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(content='IE=edge', http-equiv='X-UA-Compatible')
+    meta(content='width=device-width, initial-scale=1', name='viewport')
+    meta(content="Kevin Lin's personal website.", name='description')
+    meta(content='Kevin Lin', name='author')
+    title Kevin Lin
+    link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO", crossorigin="anonymous")
+    script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous" defer)
+    script(src="/jquery.parallax.min.js" defer)
+
+  body
+    .parallax-window(data-parallax data-src="https://ddw2ppmkywo9u.cloudfront.net/sunset_cropped.jpg" data-bleed="120" data-speed="0.63")
+
+    .text-center
+      img(src='https://ddw2ppmkywo9u.cloudfront.net/profile_picture.jpg' class='circular-image white-border' height='150px' width='150px')
+
+    .container
+      h1.text-center Kevin Lin
+
+      ul.nav.justify-content-center
+        li.nav-item
+          a(href='javascript:void(0)' class='nav-link disabled') About Me
+        li.nav-item
+          a(href='/resume/' class='nav-link') Professional Resume
+
+      .row
+        article.lead.col-lg-8.offset-lg-2.col-xs-12(style='margin-top: 3rem; margin-bottom: 6rem')
+          p Hi o/ I'm Kevin. I collect experiences.
+          p
+            | As such, I have many interests and hobbies. And I'm always looking to do something new and go further. I'd like to offer my help in any of my below topics; just email me at 
+            a(href='mailto:kevin.lin.p@gmail.com') kevin.lin.p@gmail.com
+            | .
+          p
+            ul
+              li Software development
+              li Cooking
+              li Barbecue
+              li LED art installations
+              li Sound systems
+              li PC building
+              li WiFi installation
+              li Residential LED lighting
+              li Subject-matter expert introductions
+              li General engineering
+
+    .text-center(style="opacity: 0.3; margin-bottom: 3rem")
+      img(src='https://ddw2ppmkywo9u.cloudfront.net/Flower_of_life-2level.svg' width=250 height=250 title='Flower of Life rendered by Tomruen' alt='Flower of Life')
