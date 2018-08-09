@@ -1,13 +1,7 @@
 doctype html
 html(lang='en')
   head
-    meta(charset='utf-8')
-    meta(content='IE=edge', http-equiv='X-UA-Compatible')
-    meta(content='width=device-width, initial-scale=1', name='viewport')
-    meta(content="Kevin Lin's personal website.", name='description')
-    meta(content='Kevin Lin', name='author')
-    title Kevin Lin
-    link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO", crossorigin="anonymous")
+    include /common-head.pug
     script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous" defer)
     script(src="/jquery.parallax.min.js" defer)
     style
@@ -42,18 +36,4 @@ html(lang='en')
 
       .row
         article.lead.col-lg-8.offset-lg-2.col-xs-12(style='margin-top: 3rem; margin-bottom: 6rem')
-          :markdown-it
-            Hi o/ I'm Kevin. I collect experiences.
-
-            As such, I have many interests and hobbies. And I'm always looking to do something new and go further. I'd like to offer my help in any of my below topics; just email me at <kevin.lin.p@gmail.com>.
-
-            * Software development
-            * Cooking
-            * Barbecue
-            * LED art installations
-            * Sound systems
-            * PC building
-            * WiFi installation
-            * Residential LED lighting
-            * Subject-matter expert introductions
-            * General engineering
+          include:markdown-it /homepage-text.md
