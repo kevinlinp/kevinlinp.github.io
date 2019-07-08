@@ -1,1 +1,3 @@
-eleventy --input=. --output=../ --serve
+rm -f ../resume.html
+mv ../resume/index.html ../resume.html
+rm -r ../resume/
