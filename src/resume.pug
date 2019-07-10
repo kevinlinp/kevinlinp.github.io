@@ -10,62 +10,61 @@ html(lang='en')
     style
       include:scss /resume/styles.scss
 
-  body
+  body.resume
+    .d-flex.d-print-none.justify-content-end.my-3.mx-4.opaque-on-hover(style="font-size: 90%; opacity: 0.3;")
+      .text-nowrap.mr-3
+        strong External Links
+      div
+        .d-inline-block.mr-3
+          a(href="https://calendar.google.com/calendar/embed?src=51qm6onhhavsnpe4h2k3n1e2a4%40group.calendar.google.com&mode=week")
+            | 'Busy' Calendar
+        .d-inline-block.mr-3
+          a(href="https://angel.co/kevin-lin-p")
+            | AngelList Profile
+        .d-inline-block
+          a(href="https://stackshare.io/kevinlinp/personal-projects")
+            | StackShare: Personal Projects
+
+    .d-none.d-print-block.position-absolute(style="right: 0")
+      small.text-muted
+        | printed from
+        |
+        a(href="https://kevinlinp.org/resume") kevinlinp.org/resume
+
     .container
-      .d-none.d-print-block.position-absolute(style="right: 0")
-        small.text-muted
-          | printed from
-          |
-          a(href="https://kevinlinp.org/resume") kevinlinp.org/resume
+      .text-center
+        h1 Kevin Lin
+        a(href="mailto:kevin.lin.p@gmail.com") kevin.lin.p@gmail.com
 
-      .resume
-        .text-center
-          h1 Kevin Lin
-          a(href="mailto:kevin.lin.p@gmail.com") kevin.lin.p@gmail.com
 
-        section
-          h2 Summary
-          p 5-year Ruby on Rails full-stack software developer with an interest in machine learning.
+      section
+        h2 Summary
+        p 5-year Ruby on Rails full-stack software developer with an interest in machine learning.
 
-        section
-          h2 Skills
-          ul.list-unstyled.loose-list
-            li
-              strong Languages
-              span.ml-2 Ruby, HTML, Haml, CSS, Sass, JavaScript (ES6)
-            li
-              strong Frameworks
-              span.ml-2 Ruby on Rails, MiniTest, RSpec, Capybara, jQuery, Bootstrap
-            li
-              strong Tools
-              span.ml-2 Linux, PostgreSQL, Sidekiq, Redis, Memcache, Elasticsearch, Git, Heroku, New Relic, CircleCI, Rollbar, Amazon EC2, Amazon Cloudfront, Twilio, Google Analytics, Optimizely
-            li
-              strong Methodologies
-              span.ml-2 Test-driven development, Agile
+      section
+        h2 Skills
+        ul.list-unstyled.loose-list
+          li
+            strong Languages
+            span.ml-2 Ruby, HTML, Haml, CSS, Sass, JavaScript (ES6)
+          li
+            strong Frameworks
+            span.ml-2 Ruby on Rails, MiniTest, RSpec, Capybara, jQuery, Bootstrap
+          li
+            strong Tools
+            span.ml-2 Linux, PostgreSQL, Sidekiq, Redis, Memcache, Elasticsearch, Git, Heroku, New Relic, CircleCI, Rollbar, Amazon EC2, Amazon Cloudfront, Twilio, Google Analytics, Optimizely
+          li
+            strong Methodologies
+            span.ml-2 Test-driven development, Agile
 
-        section
-          include /resume/projects.pug
+      section
+        include /resume/projects.pug
 
-        section
-          include /resume/experience.pug
+      section
+        include /resume/experience.pug
 
-        section
-          include /resume/education.pug
-
-        section
-          h2 External Links
-
-          span.mr-5
-            a(href="https://calendar.google.com/calendar/embed?src=51qm6onhhavsnpe4h2k3n1e2a4%40group.calendar.google.com&mode=week")
-              strong 'Busy' Calendar
-
-          span.mr-5
-            a(href="https://angel.co/kevin-lin-p")
-              strong AngelList Profile
-
-          span.mr-5
-            a(href="https://stackshare.io/kevinlinp/personal-projects")
-              strong StackShare: Personal Projects
+      section
+        include /resume/education.pug
 
     .d-print-none
       a(class="github-fork-ribbon right-bottom fixed" href="https://github.com/kevinlinp/kevinlinp.github.io" data-ribbon="View me on GitHub" title="View me on GitHub" target="_blank") View me on GitHub
