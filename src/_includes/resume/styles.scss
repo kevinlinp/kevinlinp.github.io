@@ -1,7 +1,6 @@
 .resume {
   font-family:
-  //"CMUBrightRoman", // fontlibrary.org
-  "Computer Modern Bright", // jsdelivr.net
+  "Computer Modern Bright",
   "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -42,6 +41,14 @@ a {
 
 ul.loose-list li {
   margin-bottom: .6rem;
+}
+
+strong {
+  // TODO: this is a lazy hack =(
+  font-family: 
+    "Computer Modern Bright Semibold",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 
 .opaque-on-hover {
