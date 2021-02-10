@@ -1,0 +1,72 @@
+doctype html
+html(lang='en')
+  head
+    include /common-head.pug
+
+    style
+      :scss
+        body {
+          word-break: keep-all;
+        }
+
+  body
+    .container.pt-5.pe-5.pb-5
+      .mb-5
+        h1.text-center.fw-light Recruiter Frequently Asked Questions
+
+      .mb-4
+        .fs-5.mb-2 What's your status?
+        .fs-6.ms-5 I'm semi-actively looking. I'm looking for the right company for myself and I'm in no hurry.
+
+      .mb-4
+        .fs-5.mb-2 Where is your resume?
+        .fs-6.ms-5
+          | The latest version of my resume can always be found at
+          |
+          a(href="https://kevinlinp.org/resume" target="_blank") kevinlinp.org/resume
+          | . If you need a printable version, please just 'print' the page as a PDF. If you're looking for a Word version; none exists, it wasn't created in Word.
+
+      .mb-4
+        .fs-5.mb-2 Which locations are you interested in?
+        .fs-6.ms-5 100% remote, Washington DC metro, NYC metro, Bay Area, San Diego, Seattle, and Portland. Europe also, I'm actively searching there, the working language would have to be English.
+
+      .mb-4
+        .fs-5.mb-2 Which industries are you interested in?
+        .fs-6.ms-5 The specific industry doesn't matter as much as what I'm working on. I'm strongly biased towards software-as-a-service products. In other words, the main source of revenue for the company should be from the software. Also, I'm not interested in ad-tech. I am more interested in developer tools, and fintech. B-Corps, and non-profits are also given preference, regardless of their product or service.
+
+      .mb-4
+        .fs-5.mb-2 What do you look for in a company?
+        .fs-6.ms-5 I'm looking for a place where people enjoy working at, and where they're all given the mentorship to grow in their own directions. Work-life balance for everyone is important, and so is using the latest software engineering practices. I also care about continual process improvement.
+
+      .mb-4
+        .fs-5.mb-2 What kind of software development would you like to do next?
+        .fs-6.ms-5 If I'll be working on a web app, I would like to stick to full-stack. If the backend work is intensive, then backend-only is fine. I am open to working in other programming languages, including JavaScript, Python, and Rust. I'd like to avoid Java, C#, and PHP.
+
+
+      .mb-4
+        .fs-5.mb-2 Do you have a portfolio?
+        .fs-6.ms-5
+          | I do have a
+          |
+          a(href="https://github.com/kevinlinp" target="_blank") GitHub
+          |
+          | and my most recent code samples can be found in my
+          |
+          a(href="https://github.com/kevinlinp/advent-of-code-2020" target="_blank") Advent of Code 2020
+          |
+          | project.
+
+      .mb-4
+        .fs-5.mb-2 What's the best way to reach you?
+        .fs-6.ms-5 Email is best, and I can schedule phone calls during normal working hours.
+
+      .mb-4
+        .fs-5.mb-2 Can I get a cheat sheet on your experience levels with certain technologies?
+        .fs-6.ms-5
+          p Of course. With 1 as beginner, 2 as intermediate, 3 as advanced, 4 as expert, and 5 as author/major contributor:
+          p Ruby 4, Ruby on Rails 4, JavaScript 3, TypeScript 2, Vue/Vuex 3, acceptance / browser testing 4, Linux 3, PostgreSQL 2, MongoDB 3, Elasticsearch 2, Redis 2, Git 2, Docker 1, test-driven development 3.
+          p All of these have been used professionally, supporting shipped software. I also do try out a bunch of things in my personal time, those can be found in the 'StackShare' link in the top-right corner of my resume.
+
+      //-.mb-4
+        //-.fs-5.mb-2
+        //-.fs-6.ms-5
