@@ -6,7 +6,6 @@ html(lang='en')
     //-link(rel="stylesheet" href="https://fontlibrary.org/face/cmu-bright" type="text/css")
     link(rel="stylesheet" href="https://kevin-lins-personal-website.s3-us-west-2.amazonaws.com/cmu-bright/Bright/cmun-bright.css" type="text/css")
     link(rel="stylesheet" href="https://kevin-lins-personal-website.s3-us-west-2.amazonaws.com/cmu-bright/Bright Semibold/cmun-bright-semibold.css" type="text/css")
-    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css")
 
     style
       include:scss /resume/styles.scss
@@ -18,21 +17,15 @@ html(lang='en')
         .text-right.text-nowrap.mb-1
           strong external links
         .text-right
-          .d-inline-block.mb-2.ml-3.text-right
-            a(href="https://calendar.google.com/calendar/embed?src=51qm6onhhavsnpe4h2k3n1e2a4%40group.calendar.google.com&mode=week")
-              | 'Busy' Calendar
-          .d-inline-block.mb-2.ml-3.text-right
-            a(href="https://kevinlinp.tumblr.com/post/186438382981")
-              | CS Topics Professional Heatmap
-          .d-inline-block.mb-2.ml-3.text-right
-            a(href="https://angel.co/kevinlinp")
-              | AngelList Profile
-          .d-inline-block.mb-2.ml-3.text-right
-            a(href="https://stackshare.io/kevinlinp/personal-projects")
+          //-.d-inline-block.mb-2.ms-3.text-right
+            //-a(href="https://calendar.google.com/calendar/embed?src=51qm6onhhavsnpe4h2k3n1e2a4%40group.calendar.google.com&mode=week" target='_blank')
+              //-| 'Busy' Calendar
+          .d-inline-block.mb-2.ms-3.text-right
+            a(href="https://github.com/kevinlinp" target='_blank')
+              | GitHub
+          .d-inline-block.mb-2.ms-3.text-right
+            a(href="https://stackshare.io/kevinlinp/personal-projects" target='_blank')
               | StackShare: Personal Projects
-          .d-inline-block.mb-2.ml-3.text-right
-            a(href="https://www.goodreads.com/review/list/97317702?shelf=read")
-              | Goodreads Profile
 
     .d-none.d-print-block.position-absolute(style="right: 0")
       small.text-muted
@@ -48,32 +41,26 @@ html(lang='en')
 
       section
         h2 Summary
-        p 5-year full-stack web software developer with an interest in machine learning. 7 years of industry experience.
+        p 6-year full-stack web software developer with an interest in machine learning.
 
       section
         h2 Skills
         ul.list-unstyled.loose-list
           li
             strong Languages
-            span.ml-2 Ruby, HTML, Haml, CSS, Sass, JavaScript (ES6)
+            span.ms-2 Ruby, JavaScript, TypeScript, HTML, Haml, CSS, Sass
           li
             strong Frameworks
-            span.ml-2 Ruby on Rails, MiniTest, RSpec, Capybara, jQuery, Bootstrap
+            span.ms-2 Ruby on Rails, Vue.js, Vuex.js, Cucumber, RSpec, MiniTest, Capybara, Bootstrap
           li
             strong Tools
-            span.ml-2 Linux, PostgreSQL, Sidekiq, Redis, Memcache, Elasticsearch, Git, Heroku, New Relic, CircleCI, Rollbar, Amazon EC2, Amazon Cloudfront, Twilio, Google Analytics, Optimizely
+            span.ms-2 Linux, PostgreSQL, MongoDB, Elasticsearch, Sidekiq, Redis, Memcache, Git, Docker, Heroku, New Relic, Circle CI, Sentry, Rollbar, Amazon EC2, Amazon Cloudfront, Twilio, Google Analytics
           li
             strong Methodologies
-            span.ml-2 Test-driven development, Agile
-
-      section
-        include /resume/projects.pug
+            span.ms-2 Agile, Test-driven development
 
       section
         include /resume/experience.pug
 
       section
         include /resume/education.pug
-
-    .d-print-none
-      a(class="github-fork-ribbon right-bottom fixed" href="https://github.com/kevinlinp/kevinlinp.github.io" data-ribbon="View me on GitHub" title="View me on GitHub" target="_blank") View me on GitHub

@@ -1,5 +1,10 @@
 {
   "dependencies": {
-    "jstransformer-scss": "^1.0.0"
+    "jstransformer-scss": "^1.0.0",
+    "markdown-it": "^10.0.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "jstransformer-markdown-it": "^2.1.0"
   }
 }

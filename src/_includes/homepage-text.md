@@ -11,5 +11,3 @@ As such, I have many interests and hobbies. And I'm always looking to do somethi
 * WiFi installation
 * Residential LED lighting
 * Portable/off-grid solar power
-* Subject-matter expert introductions
-* General engineering

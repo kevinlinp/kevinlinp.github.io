@@ -1,1 +1,1 @@
-eleventy --input=. --output=../ --serve
+npx @11ty/eleventy --input=. --output=../ --serve
